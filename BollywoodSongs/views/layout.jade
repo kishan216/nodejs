@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= "Bollywood Songs"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    each key in json
+        <a href="/songs?movie=!{key}"> !{key} </a><br>
+    
